@@ -6,11 +6,11 @@ app_name = "website"
 urlpatterns = [
     
     path("", views.IndexView.as_view(), name="index"),
-    path("", views.ContactView.as_view(), name="contact"),
-    path("", views.AboutView.as_view(), name="about"),
-    path("", views.PakegeView.as_view(), name="package"),
-    path("", views.BlogView.as_view(), name="blog"),
-    path("", views.FeaturesView.as_view(), name="featuers"),
+    path("contact/", views.ContactView.as_view(), name="contact"),
+    path("about/", views.AboutView.as_view(), name="about"),
+    path("package", views.PakegeView.as_view(), name="package"),
+    path("posts/", views.BlogView.as_view(), name="blog"),
+    path("featuers/", views.FeaturesView.as_view(), name="featuers"),
                
                
                
